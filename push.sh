@@ -8,6 +8,6 @@ read "?YN y or n Continue?"
 if [[ "$YN" =~ ^[Yy] ]]
 then
 else
-  git commit -m "study #$ISSUE_NO"
+  git commit -m "study #${ISSUE_NO}"
   git push origin main
 fi
