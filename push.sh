@@ -1,7 +1,6 @@
 #!/bin/zsh
 
 git add .
-ISSUE_NO=""
 read "?ISSUE_NO Continue?"
 
 
