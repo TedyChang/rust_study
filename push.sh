@@ -1,16 +1,13 @@
 #!/bin/zsh
 
-git add .
-read -k "?NUM Continue?"
-echo "${NUM}"
-echo "$NUM"
-echo $NUM
-
-read "?YN y or n Continue?"
+echo -n "issue num ? "
+read ISSUENO
+echo -n "y or n Continue?"
+read YN
 if [[ "$YN" =~ ^[Yy] ]]
 then
-else
-  echo "${ISSUENO}"
+  git add .
   git commit -m "study #${ISSUENO}"
   git push origin main
+else
 fi
