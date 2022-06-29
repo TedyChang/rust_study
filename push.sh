@@ -8,6 +8,7 @@ if [[ "$YN" =~ ^[Nn] ]]
 then
 else
   git branch ${ISSUENO} main
+  git checkout ${ISSUENO}
   git add .
   git commit -m "study #${ISSUENO}"
   git push origin main
