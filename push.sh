@@ -1,8 +1,10 @@
 #!/bin/zsh
 
 git add .
-read "?ISSUENO Continue?"
-echo "${ISSUENO}"
+read -k "?NUM Continue?"
+echo "${NUM}"
+echo "$NUM"
+echo $NUM
 
 read "?YN y or n Continue?"
 if [[ "$YN" =~ ^[Yy] ]]
