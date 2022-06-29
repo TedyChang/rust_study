@@ -1,13 +1,13 @@
 #!/bin/zsh
 
 git add .
-read "?ISSUE_NO Continue?"
+read "?ISSUENO Continue?"
 
 
 read "?YN y or n Continue?"
 if [[ "$YN" =~ ^[Yy] ]]
 then
 else
-  git commit -m "study #"$ISSUE_NO
+  git commit -m "study #$ISSUENO"
   git push origin main
 fi
