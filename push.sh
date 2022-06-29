@@ -10,6 +10,6 @@ else
   git pull origin main
   git add .
   git commit -m "fixed #${ISSUENO}"
-  git push origin ${ISSUENO}
+  git push origin main
   git pull origin main
 fi
