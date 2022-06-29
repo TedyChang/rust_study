@@ -4,7 +4,7 @@ fn main() {
 
     let s3 = takes_and_gives_back(s2);
 
-    println!("{} {} {}", s1, s2, s3)
+    println!("{} {}", s1, s3)
 }
 
 fn gives_ownership() -> String {
@@ -12,6 +12,6 @@ fn gives_ownership() -> String {
     some_string
 }
 
-fn takes_and_gives_back(a_sring: String) -> String {
-    a_sring
+fn takes_and_gives_back(a_string: String) -> String {
+    a_string
 }
