@@ -7,7 +7,7 @@ read YN
 if [[ "$YN" =~ ^[Nn] ]]
 then
 else
-  git branch main ${ISSUENO}
+  git branch ${ISSUENO} main
   git add .
   git commit -m "study #${ISSUENO}"
   git push origin main
