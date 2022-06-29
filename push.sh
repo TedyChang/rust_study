@@ -11,5 +11,5 @@ else
   git checkout "${ISSUENO}"
   git add .
   git commit -m "study #${ISSUENO}"
-  git push origin main
+  git push origin "${ISSUENO}"
 fi
